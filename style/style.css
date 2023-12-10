@@ -1,0 +1,13 @@
+html{
+    background-color: #e0e0e0;
+}
+body{
+    margin: 0 auto !important;
+    max-width: 1440px;
+    background-color: #fff;
+}
+iframe{
+    border: 0;
+    height: 200px;
+    margin-bottom: -7px;
+}

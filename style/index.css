@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+}
+html{
+    background-color: #e0e0e0;
+}
+body{
+    margin: 0 auto !important;
+    max-width: 1440px;
+    background-color: #fff;
+}
+.header-a{
+    background: rgba(0,0,0,0.1) url(../image/header-image.webp);
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+.header-div{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+.div-g3-tech{
+    font-family: "eb garamond", serif;
+    font-size: 1rem;
+    padding:25px;
+    text-align: center;
+}
+.div-g3-tech p{
+    margin: 0;
+}
+
+    /*margin: 15px;
+    width: 10%;
+    height: 20%;*/
+    /*border: 1px solid darkblue;
+    background-color: white;
+    color: darkblue;
+    outline-offset: 5px;
+    outline: 3px solid white;*/
+.div-about{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    padding-top: 25px;
+    font-size: 1.2rem;
+    padding-right: 100px;
+}
+.div-about a{
+    color: white;
+    text-decoration: none;
+}
+.div-about a:hover, .div-footer a:hover{
+    color: #c4978f;
+}
+.div-about a.link-active, .div-footer a.link-active{
+    color:  #c4978f;
+}
+.header-div + div{
+    position: absolute;
+    bottom: 60px;
+    left: 150px;
+    color: white;
+    font-size: 3.8rem;
+}
+.div-ourstory{
+    display: flex;
+    margin-top: 100px;
+}
+.ourstory{
+    width: 40%;
+    color: #057597;
+    font-size: 3.4rem;
+    text-align: center;
+}
+.ourstory + div{
+    width: 60%;
+    padding: 0 150px 0 30px;
+    font-size: 1.3rem;
+    font-family: "eb garamond", serif;
+    line-height: 1.6;
+    word-spacing: 4px;
+}
+.div-ourmission{
+background-image: url(../image/our-mission-2.png);
+height: 350px;
+background-repeat:no-repeat;
+justify-content: right;
+align-items: end;
+background-position: right;
+margin: 50px 0;
+}
+.div-ourmission > div{
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 70px;
+    font-size: 1.3rem;
+    font-family: "eb garamond", serif;
+    line-height: 1.6;
+    word-spacing: 4px;
+}
+.div-ourmission p{
+    padding-left: 150px;
+    margin: 10px;
+    color: #057597;
+    font-size: 3.4rem;
+}
+iframe{
+    border: 0;
+    height: 200px;
+    margin-bottom: -5px;
+}
+/* .div-footer{
+    width: 100%;
+    height: 200px;
+    background-color: #484848;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 0.8rem;
+}
+.div-footer span{
+    padding: 15px 5px 0 0;
+    display: inline-block;
+}
+.div-footer a{
+color: white;
+} */
