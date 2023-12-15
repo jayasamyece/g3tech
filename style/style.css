@@ -1,10 +1,44 @@
-html{
-    background-color: #e0e0e0;
-}
 body{
     margin: 0 auto !important;
     max-width: 1440px;
     background-color: #fff;
+}
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.header-img{
+    width: 30%;
+    height: 70px;
+    display: flex;
+    padding-left: 60px;
+}
+.header-img img{
+    width: 80px;
+    height: 60px;
+}
+.p-tech{
+    padding-top:15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.div-home{
+    padding: 20px 120px;    
+}
+.div-home > span{
+    padding-right: 30px;
+}
+.div-home a{
+    text-decoration: none;
+    color: black;
+}
+.div-home a:hover{
+    text-decoration: none;
+    color: tomato;
+}
+.div-home a.link-active{
+    color: #0818c4;
 }
 iframe{
     border: 0;

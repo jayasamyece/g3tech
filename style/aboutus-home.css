@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+}
+body{
+    margin: 0 auto !important;
+    max-width: 1440px;
+    background-color: #fff;
+}
+.about-section{
+    background: rgba(0,0,0,0.1) url(../image/header-image.webp);
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;   
+}
+.about-img{
+    width: 100%;
+    height: 300px;
+    padding: 120px 120px;
+    background-color: rgba(0,0,0,0.5);
+    color: whitesmoke;
+    font-size: 3.5rem;
+    font-family: "eb garamond", serif;
+}
+.div-ourstory{
+    display: flex;
+    margin-top: 60px;
+}
+.ourstory{
+    width: 40%;
+    color: #057597;
+    font-size: 3.4rem;
+    text-align: center;
+}
+.ourstory + div{
+    width: 60%;
+    padding: 0 150px 0 30px;
+    font-size: 1.3rem;
+    font-family: "eb garamond", serif;
+    line-height: 1.6;
+    word-spacing: 4px;
+}
+.div-ourmission{
+background-image: url(../image/our-mission-2.png);
+height: 350px;
+background-repeat:no-repeat;
+justify-content: right;
+align-items: end;
+background-position: right;
+margin: 50px 0;
+}
+.div-ourmission > div{
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 70px;
+    font-size: 1.3rem;
+    font-family: "eb garamond", serif;
+    line-height: 1.6;
+    word-spacing: 4px;
+}
+.div-ourmission p{
+    padding-left: 115px;
+    margin: 10px;
+    color: #057597;
+    font-size: 3.4rem;
+}

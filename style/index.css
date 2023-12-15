@@ -5,77 +5,128 @@
     font-family: 'Merriweather', serif;
     font-size: 1rem;
 }
-html{
-    background-color: #e0e0e0;
+:root{
+    --bg-color: #1a2b6d;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto !important;
+    max-width: 1440px;
+    background-color: #fff;
+    position: relative;
+}
+/* #carouselExampleIndicators{
+    height: 300px; 
+}*/
+.carousel-item img{
+    width: auto;
+    height: 500px;
+}
+.section-b{
+    width: 90%;
+    margin: 40px auto;
+}
+.div-expert-services{
+    font-family: "eb garamond", serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: 300;
+    word-spacing: 3px;
+    padding-bottom: 30px;
+    color: #060855;
+}
+.div-cts{
+    display: flex;
+    justify-content: space-around;
+}
+.div-cts div{
+    width: 25%;
+    padding-bottom: 20px;
+}
+.Collaborating-img{
+    width: 18%;
+    height: 55px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+.Collaborating-img img{
+    padding-top: 8px;
+    width: 80%;
+    height: 40px;
+}
+.Collaborating-img + p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+.collaborate-p{
+    text-align: justify;
+    line-height: 1.6;
+    font-family: "eb garamond", serif;
+    font-size: 1.1rem;
+}
+.p-empty{
+    display: inline-block;
+    border: 1px solid rgb(66 65 65 / 15%);
+}
+.div-about-a{
+    border: 1px solid #00000040;
+    border-radius: 4px;
+    width: 11%;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 60px;
+    box-shadow: 2px 2px 0px 1px #d2caca;
+}
+.div-about-a a{
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1rem;
+    }
+.div-about-a a:hover{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #060855;
+}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
 }
 body{
     margin: 0 auto !important;
     max-width: 1440px;
     background-color: #fff;
 }
-.header-a{
+.about-section{
     background: rgba(0,0,0,0.1) url(../image/header-image.webp);
     width: 100%;
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
-    position: relative;
+    background-position: 50% 50%;   
 }
-.header-div{
+.about-img{
     width: 100%;
     height: 300px;
-    display: flex;
-    justify-content: space-between;
-    color: white;
+    padding: 120px 120px;
     background-color: rgba(0,0,0,0.5);
-}
-.div-g3-tech{
+    color: whitesmoke;
+    font-size: 3.5rem;
     font-family: "eb garamond", serif;
-    font-size: 1rem;
-    padding:25px;
-    text-align: center;
-}
-.div-g3-tech p{
-    margin: 0;
-}
-
-    /*margin: 15px;
-    width: 10%;
-    height: 20%;*/
-    /*border: 1px solid darkblue;
-    background-color: white;
-    color: darkblue;
-    outline-offset: 5px;
-    outline: 3px solid white;*/
-.div-about{
-    display: flex;
-    justify-content: space-around;
-    width: 45%;
-    padding-top: 25px;
-    font-size: 1.2rem;
-    padding-right: 100px;
-}
-.div-about a{
-    color: white;
-    text-decoration: none;
-}
-.div-about a:hover, .div-footer a:hover{
-    color: #c4978f;
-}
-.div-about a.link-active, .div-footer a.link-active{
-    color:  #c4978f;
-}
-.header-div + div{
-    position: absolute;
-    bottom: 60px;
-    left: 150px;
-    color: white;
-    font-size: 3.8rem;
 }
 .div-ourstory{
     display: flex;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .ourstory{
     width: 40%;
@@ -110,29 +161,152 @@ margin: 50px 0;
     word-spacing: 4px;
 }
 .div-ourmission p{
-    padding-left: 150px;
+    padding-left: 115px;
     margin: 10px;
     color: #057597;
     font-size: 3.4rem;
-}
-iframe{
-    border: 0;
-    height: 200px;
-    margin-bottom: -5px;
-}
-/* .div-footer{
+}.main-our-service{
+    position: relative;
     width: 100%;
-    height: 200px;
-    background-color: #484848;
+    height: 600px;
+}
+.div-our-service{
+    width: 100%;
+    height: 250px;
+    border: 1px solid black;
+    background-color: #1a2b6d;
     color: white;
+    font-size: 2.5rem;
+    padding: 50px 0 0 120px;
+}
+.div-ourservices{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 60px;
+    position: absolute;
+    top: 140px;
+    margin-bottom: 30px;
+ }
+.div-ourservices > div{
+    width: 25%;
+    /*height: 300px;*/
+    background-color: #f2f2f2;
+    padding: 25px ;
+    text-align: start;
+    font-family: "eb garamond", serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    /* box-shadow: 5px 5px 1px 1px #d1cfcf; */
+    box-shadow: 10px 10px #fff, 10px 10px 0 2px #efeeee;
+    margin-bottom: 50px;
+}
+.div-ourservices p{
+    color: var(--bg-color);
+    font-size: 1.3rem;
+    font-weight: bold;
     text-align: center;
-    padding-top: 40px;
-    font-size: 0.8rem;
+    border-bottom: 1px solid var(--bg-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 0;
 }
-.div-footer span{
-    padding: 15px 5px 0 0;
-    display: inline-block;
+.div-ourservices-a{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 60px;
+    margin-bottom: 100px;
 }
-.div-footer a{
-color: white;
-} */
+.div-ourservices-a > div{
+    width: 25%;
+    background-color: #f2f2f2;
+    padding: 25px;
+    text-align: start;
+    font-family: "eb garamond", serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    /* box-shadow: 5px 5px 1px 1px #d1cfcf; */
+    box-shadow: 10px 10px #fff, 10px 10px 0 2px #efeeee;
+}
+.div-ourservices-a p{
+    color: var(--bg-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid var(--bg-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.div-ourservices span, .div-ourservices-a span{
+    display: block;
+    text-decoration: none;
+    padding: 20px 0;
+    padding-top: 15px;
+   
+   }
+   .div-ourservices a, .div-ourservices-a a{
+       text-decoration: none;
+       color: #da1317;
+       font-family: "eb garamond", serif;
+    font-size: 1.2rem;
+   }
+   #aboutussection{
+    display: none;
+   }
+.careers-section{
+    display: flex;
+    width: 90%;
+    margin: 0 auto 50px;
+}
+.careers-div{
+    width: 45%;
+    padding: 50px 50px 70px 70px;
+}
+.careers-img{
+    width: 55%;
+}
+.careers-p{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.careers-p + p{
+    font-family: "eb garamond", serif;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    word-spacing: 3px;
+}
+.careers-span{
+    margin-top: 40px;
+}
+.careers-span > span{
+ border: 1px solid #00000040;
+ box-shadow: 2px 2px 0px 1px #d2caca;
+ padding: 10px 16px;
+ margin: 40px;
+ border-radius: 4px;
+}
+.careers-span a{
+    color: black;
+    font-size: 1rem;
+}
+.careers-span a:hover{
+    color: #060855;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.careers-img{
+    display: flex;
+}
+.careers-img > div{
+    width: 48%;
+    margin: 0;
+}
+.careers-img img{
+    width: 95%;
+}
+.careers-img-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
