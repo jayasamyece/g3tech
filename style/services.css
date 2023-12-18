@@ -13,11 +13,11 @@ body{
     max-width: 1440px;
     background-color: #fff;
 }
-.main-our-service{
+/*.main-our-service{
     position: relative;
     width: 100%;
     height: 600px;
-}
+}*/
 .div-our-service{
     width: 100%;
     height: 250px;
@@ -30,23 +30,22 @@ body{
 .div-ourservices{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 0 60px;
-    position: absolute;
-    top: 140px;
+    position: relative;
+    top: -105px;
     margin-bottom: 30px;
  }
 .div-ourservices > div{
-    width: 25%;
-    /*height: 300px;*/
+    width: 26%;
     background-color: #f2f2f2;
-    padding: 25px ;
+    padding: 30px ;
     text-align: start;
     font-family: "eb garamond", serif;
     font-size: 1.2rem;
     line-height: 1.6;
-    /* box-shadow: 5px 5px 1px 1px #d1cfcf; */
     box-shadow: 10px 10px #fff, 10px 10px 0 2px #efeeee;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 .div-ourservices p{
     color: var(--bg-color);
@@ -58,7 +57,7 @@ body{
     margin-bottom: 15px;
     margin-top: 0;
 }
-.div-ourservices-a{
+/*.div-ourservices-a{
     display: flex;
     justify-content: space-around;
     padding: 0 60px;
@@ -72,7 +71,6 @@ body{
     font-family: "eb garamond", serif;
     font-size: 1.2rem;
     line-height: 1.6;
-    /* box-shadow: 5px 5px 1px 1px #d1cfcf; */
     box-shadow: 10px 10px #fff, 10px 10px 0 2px #efeeee;
 }
 .div-ourservices-a p{
@@ -84,8 +82,8 @@ body{
     padding-bottom: 10px;
     margin-bottom: 15px;
     margin-top: 0;
-}
-.div-ourservices span, .div-ourservices-a span{
+}*/
+.div-ourservices span/*, .div-ourservices-a span*/{
     display: block;
     text-decoration: none;
     padding: 20px 0;
@@ -98,3 +96,17 @@ body{
        font-family: "eb garamond", serif;
     font-size: 1.2rem;
    }
+@media screen and (max-width:1024px) {
+    .div-our-service{
+        padding-top: 35px;
+    }
+    .div-ourservices{
+        flex-direction: column;
+        padding: 0 7%;
+        margin-bottom: 0;
+    }
+    .div-ourservices div{
+        width: 90%;
+        padding: 4%;
+    }
+}
