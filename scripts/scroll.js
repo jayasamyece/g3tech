@@ -24,8 +24,12 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-function postMessage(){
+function postEmail(){
     document.getElementById('modal-message').style.display='block';
+}
+function postMessage(){
+    document.getElementById('modal-message').style.display='none';
+    $('#exampleModal').modal('show');
 }
 
 function postCareersMessage(){
@@ -33,6 +37,7 @@ function postCareersMessage(){
 }
 
 window.addEventListener('message', function(event) {
+  document.getElementById('modal-message').style.display='none';
   $('#exampleModal').modal('show');
 }); 
 
