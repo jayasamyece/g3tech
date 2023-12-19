@@ -31,3 +31,17 @@ function postMessage(){
 function postCareersMessage(){
     document.getElementById('careers-message').style.display='block';
 }
+
+window.addEventListener('message', function(event) {
+  $('#exampleModal').modal('show');
+}); 
+
+emailReturnURL = ()=>{
+  document.getElementById('emailReturnURL').value = window.location.href;
+  console.log('Jayasamy location.href',location.href)
+  let ele = document.getElementById('emailReturnURLCareer');
+  if(ele){
+    ele.value = window.location.href;
+  }
+}
+emailReturnURL();

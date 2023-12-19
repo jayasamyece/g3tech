@@ -10,7 +10,7 @@
     <footer>
         <div class="div-footer">
             <p><a href="index.html" title="Home"><img src="image/g3_b.png" alt="image"></a></p>
-            <p>copyright © 2024 G3 Tech Consultants</p>            
+            <p>copyright © <span id="currentYear"></span> G3 Tech Consultants</p>            
             <p class="footer-links">
             <span> <a href="index.html" title="home">Home</a></span>
             <span>|</span>
@@ -20,10 +20,25 @@
             <span>|</span>
             <span><a href="careers.html" title="careers">Careers</a></span>
             <span>|</span>
-            <span><a href="mailto:Contact@G3TechConsultants.com" title="mail">Contact us at Contact@G3TechConsultants.com</a></span>
+            <!--<span><a href="mailto:Contact@G3TechConsultants.com" title="mail">Contact us at contact@g3techconsultants.com</a></span>-->
+            <span><a href="javascript:void(0)" onclick="sendContactUsModal(event)">Contact Us</a></span>
             </p>
         </div>
-    </footer>
-
+    </footer> 
+    
+    <!-- Footer modal -->
+    <script>
+        function sendContactUsModal(e){
+            e.preventDefault();        
+          window.parent.postMessage('open modal', "*");
+        }
+        currentYear = ()=> {
+          window.currentYear = new Date().getFullYear();
+          let yearEle = document.getElementById('currentYear');
+          yearEle.innerHTML = window.currentYear;
+        };
+        setTimeout(()=>currentYear(),0);        
+    </script>
+      
     </body>
 </html>

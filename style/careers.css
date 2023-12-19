@@ -51,9 +51,10 @@ main{
 }
 .div-name{
     display: flex;
+    flex-direction: column;
 }
 .div-name > div{
- width: 50%;
+ width: 83%;
 }
 .personal-info label{
     font-family: 'Times New Roman', Times, serif;
@@ -64,6 +65,15 @@ main{
     border-bottom: 1px solid #838882;
     width: 60%;
     margin-bottom: 30px;
+}
+#textareaMessage{
+    margin-top: 20px;
+}
+.personal-info textarea{
+    border:0;
+    border: 1px solid #838882;
+    width: 60%;
+    margin-bottom: 30px;   
 }
 .personal-info input:hover{
     border-bottom: 2px solid black;
@@ -160,5 +170,8 @@ iframe{
     }
     .personal-info{
         padding: 3% 10%;
+    }
+    .personal-info textarea{
+        width: 83%;
     }
 }
